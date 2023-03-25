@@ -11,6 +11,9 @@ app.use('/api', (req, res, next) => {
   res.json({"resultwww45": "success"});
 });
 
+app.use(`/user`, userRouter);
+app.use(`/election`, electionRouter);
+
 const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
