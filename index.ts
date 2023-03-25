@@ -8,7 +8,7 @@ import express from "express";
 const app = express();
 
 app.use('/api', (req, res, next) => {
-  res.json({"resultwww": "success"});
+  res.json({"resultwww2": "success"});
 });
 
 const port = process.env.PORT || 8000;
