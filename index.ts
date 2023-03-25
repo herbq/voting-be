@@ -4,8 +4,12 @@ import { generateKeys } from "./src/services/subtle/rsa.service";
 
 import userRouter from "./src/routes/user.route";
 import electionRouter from "./src/routes/election.route";
+import cors from 'cors';
 
 const app = express();
+
+app.use(express.json())
+app.use(cors())
 
 app.use('/api', (req, res, next) => {
   res.json({"resultwww45": "success"});
