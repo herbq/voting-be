@@ -8,10 +8,10 @@ import express from "express";
 const app = express();
 
 app.use('/api', (req, res, next) => {
-  res.json({"result": "success"});
+  res.json({"resulttttt": "success"});
 });
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
   console.log(`⚡️[server]: Server is running at http://127.0.0.1:${port}`);
